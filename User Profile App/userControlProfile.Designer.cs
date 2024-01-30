@@ -1,6 +1,6 @@
 ﻿namespace User_Profile_App
 {
-    partial class userControlProfile
+    partial class UserControlProfile
     {
         /// <summary> 
         /// Erforderliche Designervariable.
@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.lblGender = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(19, 21);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name";
             // 
             // lblSurname
             // 
@@ -70,26 +61,36 @@
             this.lblGender.TabIndex = 3;
             this.lblGender.Text = "Gender";
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(19, 21);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name";
+            // 
             // userControlProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.lblGender);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblName);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "userControlProfile";
-            this.Size = new System.Drawing.Size(215, 104);
+            this.Size = new System.Drawing.Size(217, 104);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblName;
     }
 }

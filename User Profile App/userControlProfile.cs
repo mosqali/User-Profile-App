@@ -10,11 +10,36 @@ using System.Windows.Forms;
 
 namespace User_Profile_App
 {
-    public partial class userControlProfile : UserControl
+    public partial class UserControlProfile : UserControl
     {
-        public userControlProfile()
+        public UserControlProfile()
         {
             InitializeComponent();
         }
+
+        public string Name
+        {
+            get { return lblName.Text;  }
+            set { lblName.Text = value; }
+        }
+
+        public string Surname
+        {
+            get { return lblSurname.Text; }
+            set { lblSurname.Text = value; }
+        }
+
+        public string Age
+        {
+            get { return lblAge.Text; }
+            set { lblAge.Text = value; }
+        }
+
+        public string Gender
+        {
+            get { return lblGender.Text; }
+            set { lblGender.Text = value; }
+        }
+
     }
 }

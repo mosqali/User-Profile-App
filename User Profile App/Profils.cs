@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace User_Profile_App
 {
-    public partial class Form1 : Form
+    public partial class Profils : Form
     {
-        public Form1()
+        public Profils()
         {
             InitializeComponent();
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            userControlProfile userControlProfile = new userControlProfile();
-
-            flpProfils.Controls.Add(userControlProfile);
+            CreateProfil createProfil = new CreateProfil();
+            createProfil.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace User_Profile_App
 {
-    partial class Form1
+    partial class Profils
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -60,16 +60,16 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Profils
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(839, 428);
+            this.ClientSize = new System.Drawing.Size(835, 422);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.flpProfils);
             this.Controls.Add(this.btnCreate);
-            this.Name = "Form1";
+            this.Name = "Profils";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -78,8 +78,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.FlowLayoutPanel flpProfils;
         private System.Windows.Forms.Button btnDelete;
+        public System.Windows.Forms.FlowLayoutPanel flpProfils;
     }
 }
 
