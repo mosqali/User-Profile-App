@@ -12,15 +12,35 @@ namespace User_Profile_App
 {
     public partial class Profils : Form
     {
+
         public Profils()
         {
             InitializeComponent();
         }
 
+        private void ClearTextBoxes()
+        {
+            tbName.Text = String.Empty;
+            tbAge.Text = String.Empty;
+            tbGender.Text = String.Empty;
+        }
+
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            CreateProfil createProfil = new CreateProfil();
-            createProfil.Show();
+            if(tbName.Text != String.Empty || tbAge.Text != String.Empty || tbGender.Text != String.Empty)
+            {
+                dgvProfils.Rows.Add(tbName.Text, tbAge.Text, tbGender.Text);
+                ClearTextBoxes();
+            }
+            else
+            {
+                MessageBox.Show("Fill in every Textbox");
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

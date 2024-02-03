@@ -46,34 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateProfil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateProfil.Designer.cs">
-      <DependentUpon>CreateProfil.cs</DependentUpon>
-    </Compile>
     <Compile Include="Profils.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Profils.Designer.cs">
       <DependentUpon>Profils.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlProfile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlProfile.Designer.cs">
-      <DependentUpon>UserControlProfile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CreateProfil.resx">
-      <DependentUpon>CreateProfil.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="UserProfil.cs" />
     <EmbeddedResource Include="Profils.resx">
       <DependentUpon>Profils.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlProfile.resx">
-      <DependentUpon>UserControlProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
